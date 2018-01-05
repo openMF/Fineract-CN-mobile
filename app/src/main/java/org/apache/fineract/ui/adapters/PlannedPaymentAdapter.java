@@ -188,7 +188,6 @@ public class PlannedPaymentAdapter extends SectioningAdapter {
         }
         hvh.tvRemainingPrincipal.setText(context.getString(R.string.remaining_principal)
                 + context.getString(R.string.colon) + section.remainingPrincipal);
-
         hvh.updateSectionCollapseToggle(isSectionCollapsed(sectionIndex));
     }
 }

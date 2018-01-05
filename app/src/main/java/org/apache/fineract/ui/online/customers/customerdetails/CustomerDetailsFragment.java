@@ -138,7 +138,6 @@ public class CustomerDetailsFragment extends FineractBaseFragment
         ButterKnife.bind(this, rootView);
         initializeFineractUIErrorHandler(getActivity(), rootView);
         customerDetailsPresenter.attachView(this);
-
         showUserInterface();
 
         return rootView;

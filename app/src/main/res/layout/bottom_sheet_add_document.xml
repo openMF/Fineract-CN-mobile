@@ -33,6 +33,7 @@
                     android:paddingBottom="@dimen/layout_padding_30dp"
                     android:paddingLeft="@dimen/layout_padding_24dp"
                     android:paddingRight="@dimen/layout_padding_24dp"
+                    android:fontFamily="@font/roboto"
                     android:paddingStart="@dimen/layout_padding_24dp"
                     android:paddingTop="@dimen/layout_padding_16dp"
                     android:text="@string/add_document"
@@ -48,6 +49,7 @@
                     android:text="@string/browse"
                     android:layout_weight="1"
                     android:layout_marginTop="@dimen/layout_padding_16dp"
+                    android:fontFamily="@font/roboto"
                     android:drawableStart="@drawable/ic_folder_black_24dp"
                     android:drawableLeft="@drawable/ic_folder_black_24dp"
                     android:textAllCaps="false" />
@@ -63,6 +65,7 @@
                 <EditText
                     android:hint="@string/description"
                     android:id="@+id/et_amount"
+                    android:fontFamily="@font/roboto"
                     android:scrollbars="vertical"
                     android:scrollHorizontally="false"
                     android:inputType="textMultiLine"
@@ -84,6 +87,7 @@
                 <TextView
                     style="@style/Base.TextAppearance.AppCompat.Small"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
                     android:layout_width="wrap_content"
                     android:text="@string/name"
                     android:textSize="@dimen/text_size_12sp"/>
@@ -92,6 +96,7 @@
                     android:id="@+id/tv_document_name"
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
+                    android:fontFamily="@font/roboto"
                     android:textSize="@dimen/text_medium"
                     android:paddingTop="@dimen/layout_padding_4dp"
                     tools:text="This is the description"/>
@@ -117,6 +122,7 @@
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/layout_padding_16dp"
+                android:fontFamily="@font/roboto"
                 android:layout_marginRight="@dimen/layout_padding_16dp"
                 android:layout_width="wrap_content"
                 android:text="@string/cancel"
@@ -127,6 +133,7 @@
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
+                android:fontFamily="@font/roboto"
                 android:text="@string/add_document"
                 android:textAllCaps="false"
             />

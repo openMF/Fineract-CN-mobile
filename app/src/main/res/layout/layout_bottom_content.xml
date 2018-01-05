@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginTop="48dp"
+        android:fontFamily="@font/roboto"
         android:background="@color/colorPrimary"
         android:textColor="@color/white"
         android:text="@string/disburse_loan"

@@ -36,11 +36,13 @@
                     android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
                     android:text="@string/amount"
+                    android:fontFamily="@font/roboto"
                     android:textSize="@dimen/text_size_12sp"/>
 
                 <TextView
                     android:id="@+id/tv_amount"
                     android:layout_height="match_parent"
+                    android:fontFamily="@font/roboto"
                     android:layout_width="wrap_content"
                     android:textSize="@dimen/text_medium"
                     android:paddingTop="@dimen/layout_padding_4dp"
@@ -97,6 +99,7 @@
 
             <TextView
                 style="@style/Base.TextAppearance.AppCompat.Small"
+                android:fontFamily="@font/roboto"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="@string/description"
@@ -106,6 +109,7 @@
                 android:id="@+id/tv_description"
                 android:layout_height="match_parent"
                 android:layout_width="wrap_content"
+                android:fontFamily="@font/roboto"
                 android:textSize="@dimen/text_medium"
                 android:paddingTop="@dimen/layout_padding_4dp"
                 tools:text="This is the description"/>

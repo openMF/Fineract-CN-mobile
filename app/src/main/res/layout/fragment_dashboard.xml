@@ -44,6 +44,7 @@
                     android:layout_height="match_parent"
                     android:layout_width="wrap_content"
                     android:paddingEnd="0dp"
+                    android:fontFamily="@font/roboto"
                     android:paddingLeft="@dimen/layout_padding_16dp"
                     android:paddingRight="0dp"
                     android:paddingStart="@dimen/layout_padding_16dp"
@@ -63,6 +64,7 @@
 
                 <TextView
                     android:gravity="center"
+                    android:fontFamily="@font/roboto"
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
                     android:text="@string/create_edit_customer_for_offices"
@@ -89,6 +91,7 @@
                 <Button
                     android:id="@+id/btn_view_customer"
                     android:layout_height="match_parent"
+                    android:fontFamily="@font/roboto"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:text="@string/view_customer"
@@ -97,6 +100,7 @@
                 <Button
                     android:id="@+id/btn_create_customer"
                     android:layout_height="match_parent"
+                    android:fontFamily="@font/roboto"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:text="@string/create_customer"

@@ -53,11 +53,13 @@
                         android:id="@+id/tv_payment_date"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
+                        android:fontFamily="@font/roboto"
                         android:text="@string/planned_payment"/>
 
                     <TextView
                         android:id="@+id/tv_remaining_principal"
                         style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:fontFamily="@font/roboto"
                         android:layout_height="match_parent"
                         android:layout_width="wrap_content"
                         android:text="@string/remaining_principal"

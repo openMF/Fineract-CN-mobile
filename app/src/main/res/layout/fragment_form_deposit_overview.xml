@@ -40,6 +40,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:fontFamily="@font/roboto"
                         style="@style/Base.TextAppearance.AppCompat.Small"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
@@ -53,6 +54,7 @@
                         android:id="@+id/tv_product"
                         android:layout_height="match_parent"
                         android:layout_width="match_parent"
+                        android:fontFamily="@font/roboto"
                         android:paddingEnd="@dimen/layout_padding_16dp"
                         android:paddingLeft="@dimen/layout_padding_16dp"
                         android:paddingStart="@dimen/layout_padding_16dp"
@@ -73,6 +75,7 @@
                     style="@style/Base.TextAppearance.AppCompat.Small"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
+                    android:fontFamily="@font/roboto"
                     android:paddingEnd="@dimen/layout_padding_16dp"
                     android:paddingLeft="@dimen/layout_padding_16dp"
                     android:paddingStart="@dimen/layout_padding_16dp"
@@ -84,6 +87,7 @@
                     android:id="@+id/tv_no_beneficiary"
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
+                    android:fontFamily="@font/roboto"
                     android:paddingEnd="@dimen/layout_padding_16dp"
                     android:paddingLeft="@dimen/layout_padding_16dp"
                     android:paddingStart="@dimen/layout_padding_16dp"

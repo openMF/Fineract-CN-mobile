@@ -27,6 +27,7 @@
                 android:paddingEnd="0dp"
                 android:paddingLeft="@dimen/layout_padding_8dp"
                 android:paddingRight="0dp"
+                android:fontFamily="@font/roboto"
                 android:paddingStart="@dimen/layout_padding_8dp"
                 android:paddingTop="@dimen/layout_padding_16dp"
                 android:text="@string/total_debt"/>
@@ -78,6 +79,7 @@
                                     android:layout_height="match_parent"
                                     android:layout_width="wrap_content"
                                     android:textStyle="bold"
+                                    android:fontFamily="@font/roboto"
                                     android:textColor="@color/gray_dark"
                                     android:text="@string/description"/>
 
@@ -87,6 +89,7 @@
                                 android:id="@+id/tv_amount"
                                 android:layout_gravity="top"
                                 android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto"
                                 android:layout_width="wrap_content"
                                 android:textStyle="bold"
                                 android:textColor="@color/gray_dark"
@@ -125,6 +128,7 @@
                 android:layout_width="match_parent"
                 android:paddingBottom="@dimen/layout_padding_8dp"
                 android:paddingEnd="0dp"
+                android:fontFamily="@font/roboto"
                 android:paddingLeft="@dimen/layout_padding_8dp"
                 android:paddingRight="0dp"
                 android:paddingStart="@dimen/layout_padding_8dp"
@@ -173,6 +177,7 @@
                                 <TextView
                                     android:ellipsize="end"
                                     android:layout_height="match_parent"
+                                    android:fontFamily="@font/roboto"
                                     android:layout_width="wrap_content"
                                     android:textStyle="bold"
                                     android:textColor="@color/gray_dark"
@@ -185,6 +190,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_width="wrap_content"
                                 android:textStyle="bold"
+                                android:fontFamily="@font/roboto"
                                 android:textColor="@color/gray_dark"
                                 android:text="@string/amount"/>
 

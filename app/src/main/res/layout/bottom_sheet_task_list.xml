@@ -26,6 +26,7 @@
 
                 <TextView
                     android:layout_height="match_parent"
+                    android:fontFamily="@font/roboto"
                     android:layout_width="match_parent"
                     android:padding="@dimen/layout_padding_24dp"
                     android:text="@string/tasks"
@@ -70,6 +71,7 @@
                         android:id="@+id/tv_task1"
                         android:layout_gravity="center"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
                         android:layout_width="wrap_content"
                         android:paddingTop="@dimen/layout_padding_8dp"
                         android:textSize="@dimen/text_medium"
@@ -102,6 +104,7 @@
                         android:id="@+id/tv_task2"
                         android:layout_gravity="center"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
                         android:layout_width="wrap_content"
                         android:paddingTop="@dimen/layout_padding_8dp"
                         android:textSize="@dimen/text_medium"
@@ -140,6 +143,7 @@
                     android:layout_width="wrap_content"
                     android:text="@string/tasks"
                     android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="@font/roboto"
                     android:textSize="@dimen/text_large"
                     android:textStyle="bold"/>
 
@@ -147,6 +151,7 @@
                     android:id="@+id/tv_sub_header"
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
+                    android:fontFamily="@font/roboto"
                     android:paddingTop="@dimen/layout_padding_8dp"
                     android:text="@string/please_verify_following_task"
                     android:textSize="@dimen/text_size_12sp"/>
@@ -164,6 +169,7 @@
                 <EditText
                     android:hint="@string/enter_your_comment_here"
                     android:id="@+id/et_comment"
+                    android:fontFamily="@font/roboto"
                     android:inputType="textMultiLine"
                     android:layout_height="match_parent"
                     android:layout_width="match_parent"
@@ -188,6 +194,7 @@
             <Button
                 android:id="@+id/btn_cancel"
                 android:layout_gravity="center"
+                android:fontFamily="@font/roboto"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/layout_padding_16dp"
                 android:layout_marginRight="@dimen/layout_padding_16dp"
@@ -200,6 +207,7 @@
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
+                android:fontFamily="@font/roboto"
                 android:text="@string/tasks"
                 android:textAllCaps="false"
             />

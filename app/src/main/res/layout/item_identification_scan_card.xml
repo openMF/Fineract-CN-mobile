@@ -64,6 +64,7 @@
                     android:id="@+id/tv_identifier"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
+                    android:fontFamily="@font/roboto"
                     android:textColor="@color/black"
                     android:layout_weight="1"
                     tools:text="Scan card"/>
@@ -99,6 +100,7 @@
                 android:maxLines="1"
                 android:paddingEnd="@dimen/layout_padding_24dp"
                 android:paddingLeft="0dp"
+                android:fontFamily="@font/roboto"
                 android:paddingRight="@dimen/layout_padding_24dp"
                 android:paddingStart="0dp"
                 android:paddingTop="@dimen/layout_padding_4dp"

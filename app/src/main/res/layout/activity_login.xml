@@ -34,6 +34,7 @@
 
                 <TextView
                     android:gravity="center"
+                    android:fontFamily="@font/roboto"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:text="@string/enter_you_credentials"/>
@@ -56,6 +57,7 @@
                         android:drawableStart="@drawable/ic_tenant_black_24dp"
                         android:drawablePadding="@dimen/layout_padding_8dp"
                         android:hint="@string/tenant"
+                        android:fontFamily="@font/roboto"
                         android:id="@+id/et_tenant"
                         android:inputType="text"
                         android:layout_height="wrap_content"
@@ -73,6 +75,7 @@
                         android:drawableStart="@drawable/ic_person_black_24dp"
                         android:drawablePadding="@dimen/layout_padding_8dp"
                         android:hint="@string/username"
+                        android:fontFamily="@font/roboto"
                         android:id="@+id/et_username"
                         android:inputType="text"
                         android:layout_height="wrap_content"
@@ -92,6 +95,7 @@
                         android:drawablePadding="@dimen/layout_padding_8dp"
                         android:hint="@string/password"
                         android:id="@+id/et_password"
+                        android:fontFamily="@font/roboto"
                         android:inputType="textPassword"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"/>
@@ -104,6 +108,7 @@
                 android:id="@+id/btn_login"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
                 android:layout_marginTop="@dimen/layout_padding_15dp"
                 android:layout_width="match_parent"
                 android:text="@string/login"

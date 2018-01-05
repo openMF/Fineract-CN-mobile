@@ -43,6 +43,7 @@
                         android:hint="@string/required_number"
                         android:id="@+id/et_number"
                         android:inputType="text"
+                        android:fontFamily="@font/roboto"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"/>
                 </android.support.design.widget.TextInputLayout>
@@ -56,6 +57,7 @@
                     <EditText
                         android:hint="@string/required_type"
                         android:id="@+id/et_type"
+                        android:fontFamily="@font/roboto"
                         android:inputType="text"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"/>
@@ -70,6 +72,7 @@
                     <EditText
                         android:drawableLeft="@drawable/ic_event_black_24dp"
                         android:drawablePadding="@dimen/layout_padding_16dp"
+                        android:fontFamily="@font/roboto"
                         android:drawableStart="@drawable/ic_event_black_24dp"
                         android:hint="@string/required_expiration_date"
                         android:id="@+id/et_expiration_date"
@@ -89,6 +92,7 @@
                         android:hint="@string/required_issuer"
                         android:id="@+id/et_issuer"
                         android:inputType="text"
+                        android:fontFamily="@font/roboto"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"/>
                 </android.support.design.widget.TextInputLayout>
