@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.stepstone.stepper.Step;
 import com.stepstone.stepper.VerificationError;
@@ -27,8 +28,10 @@ import org.apache.fineract.ui.base.FineractBaseFragment;
 import org.apache.fineract.utils.ConstantKeys;
 import org.apache.fineract.utils.ValidationUtil;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Locale;
 
 import butterknife.BindView;
@@ -263,7 +266,36 @@ public class FormCustomerDetailsFragment extends FineractBaseFragment implements
     }
 
     public boolean validateDateOfBirth() {
-        if ((dateOfBirth.getDay() == null) || (dateOfBirth.getYear() == null) || (
+        long timeInMilliseconds=0;
+        long currenttimeInMilliseconds = 0;
+        SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT, Locale.ENGLISH);
+       try {
+
+           String format=(sdf.format(calendar.getTime()));
+
+           Date mDate = sdf.parse(format);
+           timeInMilliseconds = mDate.getTime();
+
+       } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        Calendar c = Calendar.getInstance();
+        String formattedDate = sdf.format(c.getTime());
+        try {
+            Date mDate = sdf.parse(formattedDate);
+            currenttimeInMilliseconds = mDate.getTime();
+
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+
+        if ((timeInMilliseconds>currenttimeInMilliseconds))
+        {
+            Toast.makeText(getActivity(),"Invalid date",Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if ( (dateOfBirth.getDay() == null) || (dateOfBirth.getYear() == null) || (
                 dateOfBirth.getMonth() == null)) {
             showTextInputLayoutError(tilDateOfBirth, getString(R.string.required));
             return false;
@@ -283,7 +315,7 @@ public class FormCustomerDetailsFragment extends FineractBaseFragment implements
 
     public void showTextInputLayoutError(TextInputLayout textInputLayout, String errorMessage) {
         textInputLayout.setErrorEnabled(true);
-        textInputLayout.setError(errorMessage);
+        textInputLayout.setError(    errorMessage);
     }
 
     @Override
