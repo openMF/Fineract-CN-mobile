@@ -33,6 +33,7 @@
             <TextView
                 android:id="@+id/tv_loan_identifier"
                 style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:fontFamily="@font/roboto"
                 android:layout_height="match_parent"
                 android:layout_width="match_parent"
                 tools:text="Loan Identifier"
@@ -42,6 +43,7 @@
                 style="@style/Base.TextAppearance.AppCompat.Small"
                 android:ellipsize="end"
                 android:id="@+id/tv_modified_by"
+                android:fontFamily="@font/roboto"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:lines="1"
@@ -50,6 +52,7 @@
             <TextView
                 style="@style/Base.TextAppearance.AppCompat.Small"
                 android:id="@+id/tv_modified_on"
+                android:fontFamily="@font/roboto"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 tools:text="Last modified on: 12 Aug 2017"/>
@@ -60,6 +63,7 @@
             android:id="@+id/tv_account_balance"
             android:layout_gravity="center"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
             android:layout_marginEnd="@dimen/layout_padding_24dp"
             android:layout_marginRight="@dimen/layout_padding_24dp"
             android:layout_width="wrap_content"

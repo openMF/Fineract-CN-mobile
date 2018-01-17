@@ -51,6 +51,7 @@
                             style="@style/Base.TextAppearance.AppCompat.Small"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/layout_padding_16dp"
+                            android:fontFamily="@font/roboto"
                             android:layout_marginStart="@dimen/layout_padding_16dp"
                             android:layout_marginTop="@dimen/layout_padding_16dp"
                             android:layout_width="wrap_content"
@@ -58,6 +59,7 @@
 
                         <Button
                             android:layout_alignParentRight="true"
+                            android:fontFamily="@font/roboto"
                             android:layout_height="match_parent"
                             android:layout_width="wrap_content"
                             android:text="Add Document"
@@ -83,6 +85,7 @@
                             android:padding="@dimen/layout_padding_24dp"
                             android:text="No documents to show. add documents"
                             android:textSize="@dimen/text_small"
+                            android:fontFamily="@font/roboto"
                             android:visibility="visible"/>
 
                     </LinearLayout>

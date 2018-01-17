@@ -38,6 +38,7 @@
                         android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
                         android:gravity="center"
                         android:id="@+id/tv_toolbar_date"
+                        android:fontFamily="@font/roboto"
                         android:layout_gravity="center"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"

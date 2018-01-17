@@ -41,6 +41,7 @@
                 android:id="@+id/tv_alert_text_1"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
+                android:fontFamily="@font/roboto"
                 android:textColor="@color/blue"
                 android:textSize="@dimen/text_medium"
                 tools:text="@string/customer_loan_approved"/>
@@ -48,6 +49,7 @@
             <TextView
                 android:id="@+id/tv_alert_text_2"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
                 android:layout_width="wrap_content"
                 android:textColor="@color/blue"
                 android:textSize="@dimen/text_medium"

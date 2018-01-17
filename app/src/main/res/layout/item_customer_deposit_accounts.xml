@@ -33,6 +33,7 @@
             <TextView
                 style="@style/Base.TextAppearance.AppCompat.Body1"
                 android:layout_height="match_parent"
+                android:fontFamily="@font/roboto"
                 android:layout_width="match_parent"
                 android:text="@string/account_identifier"/>
 
@@ -44,10 +45,12 @@
                 android:lines="1"
                 android:textColor="@color/black"
                 android:textSize="@dimen/text_medium"
+                android:fontFamily="@font/roboto"
                 tools:text="Deposit Identifier"/>
 
             <TextView
                 android:id="@+id/tv_deposit_product"
+                android:fontFamily="@font/roboto"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:textColor="@color/gray_dark"
@@ -61,6 +64,7 @@
             android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/layout_padding_24dp"
+            android:fontFamily="@font/roboto"
             android:layout_marginRight="@dimen/layout_padding_24dp"
             android:layout_width="wrap_content"
             android:textSize="@dimen/text_medium"

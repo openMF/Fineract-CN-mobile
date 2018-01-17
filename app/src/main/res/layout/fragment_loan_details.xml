@@ -35,6 +35,7 @@
                 <TextView
                     style="@style/Base.TextAppearance.AppCompat.Small"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
                     android:layout_marginLeft="@dimen/layout_padding_8dp"
                     android:layout_marginStart="@dimen/layout_padding_8dp"
                     android:layout_width="match_parent"
@@ -57,6 +58,7 @@
                     <EditText
                         android:hint="@string/short_name"
                         android:id="@+id/et_short_name"
+                        android:fontFamily="@font/roboto"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:inputType="text"/>
@@ -70,6 +72,7 @@
 
                     <EditText
                         android:hint="@string/principal_amount"
+                        android:fontFamily="@font/roboto"
                         android:id="@+id/et_principal_amount"
                         android:inputType="numberDecimal"
                         android:layout_height="wrap_content"
@@ -93,6 +96,7 @@
                         <EditText
                             android:hint="@string/term"
                             android:id="@+id/et_term"
+                            android:fontFamily="@font/roboto"
                             android:inputType="numberDecimal"
                             android:layout_height="wrap_content"
                             android:layout_width="match_parent"/>
@@ -125,6 +129,7 @@
                         <EditText
                             android:hint="@string/repay_every"
                             android:id="@+id/et_repay"
+                            android:fontFamily="@font/roboto"
                             android:inputType="numberDecimal"
                             android:layout_height="wrap_content"
                             android:layout_width="match_parent"/>
@@ -152,6 +157,7 @@
                     <TextView
                         style="@style/Base.TextAppearance.AppCompat.Small"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
                         android:layout_marginLeft="@dimen/layout_padding_8dp"
                         android:layout_marginStart="@dimen/layout_padding_8dp"
                         android:layout_width="match_parent"
@@ -209,6 +215,7 @@
                             style="@style/Base.TextAppearance.AppCompat.Small"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/layout_padding_8dp"
+                            android:fontFamily="@font/roboto"
                             android:layout_marginStart="@dimen/layout_padding_8dp"
                             android:layout_width="match_parent"
                             android:text="@string/on_the"/>
@@ -231,6 +238,7 @@
                             <TextView
                                 android:gravity="start|center_vertical"
                                 android:layout_height="match_parent"
+                                android:fontFamily="@font/roboto"
                                 android:layout_weight="1"
                                 android:layout_width="match_parent"
                                 android:text="@string/day"/>
@@ -241,6 +249,7 @@
                             style="@style/Base.TextAppearance.AppCompat.Small"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/layout_padding_8dp"
+                            android:fontFamily="@font/roboto"
                             android:layout_marginStart="@dimen/layout_padding_8dp"
                             android:layout_width="match_parent"
                             android:text="@string/on_the"/>
@@ -286,6 +295,7 @@
                         style="@style/Base.TextAppearance.AppCompat.Small"
                         android:gravity="center_horizontal|start|center"
                         android:layout_height="match_parent"
+                        android:fontFamily="@font/roboto"
                         android:layout_marginLeft="@dimen/layout_padding_8dp"
                         android:layout_marginStart="@dimen/layout_padding_8dp"
                         android:layout_width="wrap_content"

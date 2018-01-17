@@ -55,6 +55,7 @@
                 style="@style/Base.TextAppearance.AppCompat.Medium"
                 android:ellipsize="end"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
                 android:layout_width="wrap_content"
                 android:lines="1"
                 android:textColor="@color/black"
@@ -62,6 +63,7 @@
 
             <TextView
                 android:id="@+id/tv_status_change_date_time"
+                android:fontFamily="@font/roboto"
                 style="@style/Base.TextAppearance.AppCompat.Small"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"

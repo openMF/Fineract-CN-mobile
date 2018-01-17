@@ -51,10 +51,12 @@
                             android:layout_height="wrap_content"
                             android:layout_width="wrap_content"
                             android:text="@string/number"
+                            android:fontFamily="@font/roboto"
                             android:textColor="@color/colorSecondaryText"
                             android:textSize="@dimen/text_size_12sp"/>
 
                         <TextView
+                            android:fontFamily="@font/roboto"
                             android:id="@+id/tv_number"
                             android:layout_height="wrap_content"
                             android:layout_width="wrap_content"
@@ -77,6 +79,7 @@
 
                         <TextView
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
                             android:layout_width="wrap_content"
                             android:text="@string/type"
                             android:textColor="@color/colorSecondaryText"
@@ -84,6 +87,7 @@
 
                         <TextView
                             android:id="@+id/tv_type"
+                            android:fontFamily="@font/roboto"
                             android:layout_height="wrap_content"
                             android:layout_width="wrap_content"
                             android:paddingTop="@dimen/layout_padding_4dp"
@@ -127,6 +131,7 @@
 
                                 <TextView
                                     style="@style/Base.TextAppearance.AppCompat.Small"
+                                    android:fontFamily="@font/roboto"
                                     android:layout_height="match_parent"
                                     android:layout_width="wrap_content"
                                     android:textSize="@dimen/text_size_12sp"
@@ -134,6 +139,7 @@
 
                                 <TextView
                                     android:id="@+id/tv_expiration_date"
+                                    android:fontFamily="@font/roboto"
                                     android:layout_height="wrap_content"
                                     android:layout_width="wrap_content"
                                     tools:text="1 Aug 2017"/>
@@ -159,6 +165,7 @@
 
                         <TextView
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
                             android:layout_width="wrap_content"
                             android:text="@string/issuer"
                             android:textColor="@color/colorSecondaryText"
@@ -167,6 +174,7 @@
                         <TextView
                             android:id="@+id/tv_issuer"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
                             android:layout_width="wrap_content"
                             android:paddingTop="@dimen/layout_padding_4dp"
                             tools:text="Government"/>
@@ -182,6 +190,7 @@
                 android:layout_width="match_parent"
                 android:paddingBottom="@dimen/layout_padding_8dp"
                 android:paddingEnd="0dp"
+                android:fontFamily="@font/roboto"
                 android:paddingLeft="@dimen/layout_padding_8dp"
                 android:paddingRight="0dp"
                 android:paddingStart="@dimen/layout_padding_8dp"
@@ -212,6 +221,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
                         android:textSize="@dimen/text_size_12sp"
+                        android:fontFamily="@font/roboto"
                         android:clickable="true"
                         android:focusable="true"
                         android:foreground="?android:attr/selectableItemBackground"

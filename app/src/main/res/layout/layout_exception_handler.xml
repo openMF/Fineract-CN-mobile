@@ -36,6 +36,7 @@
                 style="@style/Base.TextAppearance.AppCompat.Medium"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
+                android:fontFamily="@font/roboto"
                 android:text="@string/error_sorry_not_able_to_load"
                 android:textColor="@color/grey_500"
                 android:textSize="@dimen/text_size_14sp"
@@ -45,6 +46,7 @@
                 android:id="@+id/tv_error_feature_name"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
                 android:layout_width="wrap_content"
                 android:textColor="@color/grey_500"
                 android:textSize="@dimen/text_size_14sp"
@@ -64,6 +66,7 @@
                 style="@style/Base.TextAppearance.AppCompat.Large"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
                 android:layout_width="wrap_content"
                 android:text="@string/oh_no"
                 android:textColor="@color/grey_500"
@@ -73,6 +76,7 @@
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
+                android:fontFamily="@font/roboto"
                 android:text="@string/no_internet_connection"
                 android:textColor="@color/grey_500"
                 android:textSize="@dimen/text_size_14sp"/>
@@ -80,6 +84,7 @@
             <TextView
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
                 android:layout_width="wrap_content"
                 android:text="@string/or_try_again"
                 android:textColor="@color/grey_500"
@@ -94,6 +99,7 @@
             android:layout_marginTop="@dimen/layout_padding_16dp"
             android:layout_width="wrap_content"
             android:paddingLeft="@dimen/layout_padding_24dp"
+            android:fontFamily="@font/roboto"
             android:paddingRight="@dimen/layout_padding_24dp"
             android:text="@string/try_again"/>
 
@@ -123,12 +129,14 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:textColor="@color/grey_500"
+            android:fontFamily="@font/roboto"
             android:textSize="@dimen/text_size_20sp"
             android:typeface="monospace"
             tools:text="No Deposit accounts Found"/>
 
         <TextView
             android:id="@+id/tv_empty_sub_feature_name"
+            android:fontFamily="@font/roboto"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:textColor="@color/grey_500"

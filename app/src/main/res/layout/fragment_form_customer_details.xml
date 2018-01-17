@@ -48,6 +48,7 @@
                             android:hint="@string/required_account"
                             android:id="@+id/et_account"
                             android:inputType="text"
+                            android:fontFamily="@font/roboto"
                             android:layout_height="wrap_content"
                             android:layout_width="match_parent"/>
                     </android.support.design.widget.TextInputLayout>
@@ -61,6 +62,7 @@
                         <EditText
                             android:hint="@string/required_first_name"
                             android:id="@+id/et_first_name"
+                            android:fontFamily="@font/roboto"
                             android:inputType="text"
                             android:layout_height="wrap_content"
                             android:layout_width="match_parent"/>
@@ -75,6 +77,7 @@
                         <EditText
                             android:hint="@string/optional_middle_name"
                             android:id="@+id/et_middle_name"
+                            android:fontFamily="@font/roboto"
                             android:inputType="text"
                             android:layout_height="wrap_content"
                             android:layout_width="match_parent"/>
@@ -88,6 +91,7 @@
 
                         <EditText
                             android:hint="@string/required_last_name"
+                            android:fontFamily="@font/roboto"
                             android:id="@+id/et_last_name"
                             android:inputType="text"
                             android:layout_height="wrap_content"
@@ -104,6 +108,7 @@
                             android:drawablePadding="@dimen/layout_padding_16dp"
                             android:drawableStart="@drawable/ic_cake_black_24dp"
                             android:hint="@string/required_date_of_birth"
+                            android:fontFamily="@font/roboto"
                             android:id="@+id/et_date_of_birth"
                             android:inputType="date"
                             android:focusable="false"
@@ -125,6 +130,7 @@
                         android:id="@+id/cb_is_member"
                         android:layout_height="wrap_content"
                         android:text="@string/is_member"
+                        android:fontFamily="@font/roboto"
                         android:paddingStart="@dimen/layout_padding_16dp"
                         android:paddingRight="@dimen/layout_padding_16dp"
                         android:checked="true"

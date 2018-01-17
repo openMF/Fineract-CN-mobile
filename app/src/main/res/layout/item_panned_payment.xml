@@ -33,6 +33,7 @@
 
             <TextView
                 android:id="@+id/tv_charge_name"
+                android:fontFamily="@font/roboto"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/layout_padding_8dp"
@@ -47,6 +48,7 @@
                 android:layout_marginLeft="@dimen/layout_padding_8dp"
                 android:layout_marginStart="@dimen/layout_padding_8dp"
                 android:layout_width="match_parent"
+                android:fontFamily="@font/roboto"
                 android:paddingEnd="@dimen/layout_padding_8dp"
                 android:paddingLeft="@dimen/layout_padding_8dp"
                 android:paddingRight="@dimen/layout_padding_8dp"
