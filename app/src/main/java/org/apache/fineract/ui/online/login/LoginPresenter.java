@@ -16,6 +16,7 @@ import org.apache.fineract.ui.base.BasePresenter;
 
 import java.io.IOException;
 import java.lang.annotation.Annotation;
+import java.net.UnknownHostException;
 
 import javax.inject.Inject;
 
@@ -102,6 +103,13 @@ public class LoginPresenter extends BasePresenter<LoginContract.View>
                                 getMvpView().showError(mifosError.getMessage());
                             }
                         }
+
+                        if (throwable instanceof UnknownHostException) {
+                            getMvpView().showError(
+                                    context.getString(R.string.error_server_down));
+
+                        }
+
                     }
 
                     @Override
