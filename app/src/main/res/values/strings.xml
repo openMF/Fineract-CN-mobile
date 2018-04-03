@@ -67,6 +67,9 @@
     <string name="payment_cycle_week">Repay every %1$d %2$s on %3$s</string>
     <string name="payment_cycle_year_day">Repay every %1$d %2$s on the %3$s day in %4$s</string>
     <string name="payment_cycle_year_day_week">Repay every %1$d %2$s on the %3$s %4$s in %5$s</string>
+    <string name="error_validation_minimum_chars">%1$s cannot be less than %2$d characters</string>
+    <string name="error_validation_cannot_contain_spaces">%1$s cannot contain %2$s</string>
+    <string name="spaces">Spaces</string>
 
     <string name="account">Account</string>
     <string name="balance">Balance</string>
