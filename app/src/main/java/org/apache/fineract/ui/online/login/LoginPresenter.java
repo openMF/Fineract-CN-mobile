@@ -3,6 +3,7 @@ package org.apache.fineract.ui.online.login;
 import static org.apache.fineract.data.remote.BaseApiManager.retrofit;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.util.Log;
 
 import org.apache.fineract.R;
@@ -62,53 +63,73 @@ public class LoginPresenter extends BasePresenter<LoginContract.View>
     @Override
     public void login(String username, String password) {
         checkViewAttached();
-        getMvpView().showProgressDialog();
-        compositeDisposable.add(dataManagerAuth.login(username, password)
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribeWith(new DisposableObserver<Authentication>() {
-                    @Override
-                    public void onNext(Authentication user) {
-                        getMvpView().hideProgressDialog();
-                        getMvpView().showUserLoginSuccessfully(user);
-                    }
-
-                    @Override
-                    public void onError(Throwable throwable) {
-                        getMvpView().hideProgressDialog();
-                        if (throwable instanceof NoConnectivityException) {
-                            getMvpView().showNoInternetConnection();
+        if (isCredentialsValid(username, password)) {
+            getMvpView().showProgressDialog();
+            compositeDisposable.add(dataManagerAuth.login(username, password)
+                    .subscribeOn(Schedulers.io())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribeWith(new DisposableObserver<Authentication>() {
+                        @Override
+                        public void onNext(Authentication user) {
+                            getMvpView().hideProgressDialog();
+                            getMvpView().showUserLoginSuccessfully(user);
                         }
 
-                        MifosError mifosError = new MifosError();
-                        Converter<ResponseBody, MifosError> errorConverter =
-                                retrofit.responseBodyConverter(MifosError.class, new Annotation[0]);
-                        if (throwable instanceof HttpException) {
-                            HttpException httpException = (HttpException) throwable;
-                            Response response = httpException.response();
+                        @Override
+                        public void onError(Throwable throwable) {
+                            getMvpView().hideProgressDialog();
+                            if (throwable instanceof NoConnectivityException) {
+                                getMvpView().showNoInternetConnection();
+                            }
 
-                            if (response.errorBody() != null) {
-                                try {
-                                    mifosError = errorConverter.convert(response.errorBody());
-                                } catch (IOException e) {
-                                    Log.d(LOG_TAG, e.getLocalizedMessage());
+                            MifosError mifosError = new MifosError();
+                            Converter<ResponseBody, MifosError> errorConverter =
+                                    retrofit.responseBodyConverter(MifosError.class,
+                                            new Annotation[0]);
+                            if (throwable instanceof HttpException) {
+                                HttpException httpException = (HttpException) throwable;
+                                Response response = httpException.response();
+
+                                if (response.errorBody() != null) {
+                                    try {
+                                        mifosError = errorConverter.convert(response.errorBody());
+                                    } catch (IOException e) {
+                                        Log.d(LOG_TAG, e.getLocalizedMessage());
+                                    }
+                                }
+
+                                if (mifosError.getMessage() == null) {
+                                    getMvpView().showError(
+                                            context.getString(R.string.wrong_username_or_password));
+                                } else {
+                                    getMvpView().showError(mifosError.getMessage());
                                 }
                             }
-
-                            if (mifosError.getMessage() == null) {
-                                getMvpView().showError(
-                                        context.getString(R.string.wrong_username_or_password));
-                            } else {
-                                getMvpView().showError(mifosError.getMessage());
-                            }
                         }
-                    }
 
-                    @Override
-                    public void onComplete() {
+                        @Override
+                        public void onComplete() {
 
-                    }
-                })
-        );
+                        }
+                    })
+            );
+        }
+    }
+
+    private boolean isCredentialsValid(String username, String password) {
+
+        final Resources resources = context.getResources();
+        if (username.trim().contains(" ")) {
+            getMvpView().showError(context.getString(R.string.error_validation_cannot_contain_spaces
+                    , username.trim(), context.getString(R.string.spaces) ));
+            return false;
+        } else if (password.length() < 6) {
+            getMvpView().showError(context.getString(R.string.error_validation_minimum_chars,
+                    context.getString(R.string.password), resources
+                            .getInteger(R.integer.password_minimum_length)));
+            return false;
+        }
+
+        return true;
     }
 }
