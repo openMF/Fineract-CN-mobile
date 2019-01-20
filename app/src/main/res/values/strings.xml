@@ -347,6 +347,8 @@
     <!--Progress Dialog Message-->
     <string name="please_wait">Please wait &#8230;</string>
     <string name="logging_in">Logging in…</string>
+    <string name="OK">OK</string>
+    <string name="Under_Construction">Under construction</string>
 
     <string-array name="loan_application_steps">
         <item>Loan details</item>
