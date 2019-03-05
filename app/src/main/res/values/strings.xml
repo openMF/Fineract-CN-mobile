@@ -9,6 +9,7 @@
     <string name="login">Login</string>
     <string name="fineract_account">Fineract Account</string>
     <string name="welcome">Welcome</string>
+    <string name="login_failed">Login Failed</string>
     <string name="no_internet_connection">No Internet found. Check your connection</string>
     <string name="or_try_again">or try again</string>
     <string name="wrong_username_or_password">Wrong username or password</string>
