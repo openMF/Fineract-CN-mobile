@@ -101,6 +101,8 @@ public class LoginPresenter extends BasePresenter<LoginContract.View>
                             } else {
                                 getMvpView().showError(mifosError.getMessage());
                             }
+                        } else {
+                            getMvpView().showError(context.getString(R.string.login_failed));
                         }
                     }
 
