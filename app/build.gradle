@@ -83,8 +83,8 @@ dependencies {
     implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okHttp3Version"
 
     //Glide for loading the images
-    implementation 'com.github.bumptech.glide:glide:3.7.0'
-    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
 
     // Dagger 2 Dependencies
     implementation "com.google.dagger:dagger:$rootProject.daggerVersion"
