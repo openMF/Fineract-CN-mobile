@@ -11,6 +11,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import org.apache.fineract.R;
 import org.apache.fineract.data.local.PreferencesHelper;
@@ -50,9 +51,7 @@ public class DashboardActivity extends FineractBaseActivity implements
         setContentView(R.layout.activity_dashboard);
         getActivityComponent().inject(this);
         ButterKnife.bind(this);
-
         replaceFragment(DashboardFragment.newInstance(), false, R.id.container);
-
         setupNavigationBar();
     }
 
@@ -113,8 +112,10 @@ public class DashboardActivity extends FineractBaseActivity implements
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
+
         } else {
             super.onBackPressed();
+
         }
     }
 

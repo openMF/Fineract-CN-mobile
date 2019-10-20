@@ -9,7 +9,6 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         style="@style/LinearLayout.Base"
         android:background="@color/black">
-
         <include layout="@layout/toolbar" />
 
         <ImageView

@@ -5,14 +5,13 @@
     android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <include layout="@layout/toolbar"/>
-
    <ScrollView
        android:layout_width="match_parent"
        android:layout_height="wrap_content">
         <LinearLayout
             android:layout_height="match_parent"
             android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
             android:orientation="vertical"
             android:padding="@dimen/layout_padding_30dp">
 
@@ -39,7 +38,7 @@
 
             <LinearLayout
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/layout_padding_30dp"
+                android:layout_marginTop="80dp"
                 android:layout_width="match_parent"
                 android:orientation="vertical">
 
@@ -54,6 +53,8 @@
                         android:drawablePadding="@dimen/layout_padding_8dp"
                         android:hint="@string/tenant"
                         android:id="@+id/et_tenant"
+                        app:backgroundTint="@color/colorPrimary"
+                        android:textCursorDrawable="@color/colorPrimary"
                         android:inputType="text"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"/>
@@ -72,6 +73,8 @@
                         android:hint="@string/username"
                         android:id="@+id/et_username"
                         android:inputType="text"
+                        app:backgroundTint="@color/colorPrimary"
+                        android:textCursorDrawable="@color/colorPrimary"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"/>
 
@@ -88,6 +91,8 @@
                         android:drawableStart="@drawable/ic_password_black_24dp"
                         android:drawablePadding="@dimen/layout_padding_8dp"
                         android:hint="@string/password"
+                        app:backgroundTint="@color/colorPrimary"
+                        android:textCursorDrawable="@color/colorPrimary"
                         android:id="@+id/et_password"
                         android:inputType="textPassword"
                         android:layout_height="wrap_content"
@@ -101,7 +106,8 @@
                 android:id="@+id/btn_login"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/layout_padding_15dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_background"
                 android:layout_width="match_parent"
                 android:text="@string/login"
             />
