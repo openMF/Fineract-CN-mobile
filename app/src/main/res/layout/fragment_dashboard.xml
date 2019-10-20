@@ -15,7 +15,9 @@
         android:id="@+id/cv_customer_deposit_details"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:layout_margin="10dp"
         android:visibility="visible"
+        app:cardCornerRadius="@dimen/layout_padding_10dp"
         app:cardBackgroundColor="@color/colorPrimaryDark"
         app:cardElevation="4dp">
 

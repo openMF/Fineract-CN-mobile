@@ -48,7 +48,7 @@ public class LoginActivity extends FineractBaseActivity implements LoginContract
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
         loginPresenter.attachView(this);
-        setActionBarTitle(getString(R.string.fineract_account));
+        //setActionBarTitle(getString(R.string.fineract_account));
         preferencesHelper.clear();
     }
 
